@@ -47,4 +47,5 @@
 
     (17-07-2016)
         - Boris
-        - Eduardo 
+        - Eduardo
+        - Nico
