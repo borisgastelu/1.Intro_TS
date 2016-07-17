@@ -1,0 +1,19 @@
+{
+  "name": "intro-ts",
+  "version": "1.0.0",
+  "description": "Introduccion a TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "precompile": "rimraf ./build/*",
+    "compile": "tsc --outdir build ./src/*.ts --watch --sourcemap",
+    "lite": "lite-server",
+    "serve": "concurrently \"npm run compile\" \"npm run lite\""
+  },
+  "author": "Boris Gastelú",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.2",
+    "rimraf": "^2.5.3"
+  }
+}
