@@ -7,7 +7,7 @@
 
 # TypeScript (TS)
 -   TypeScript es un superconjunto de JavaScript
--   Utiliza la última versión del estandar ECMAScript 2015 
+-   Utiliza la última versión del estandar ECMAScript 2015
 -   Todo código escrito en TypeScript es JavaScript válido
 -   TS utiliza anotaciones para asignar el tipo de dato.
 
@@ -36,9 +36,14 @@
     1. Realizar copia de repositorio git localmente
         `git clone <url_repositorio_git> <nombre_proyecto>`
 
-    7. Bajar codigo
+    2. Bajar codigo
         `git pull origin master`
 
 # TypeScript (TS)
-- Compilacion
-    `tsc --outdir build src/*.ts`
+    - Compilacion
+        `tsc --outdir build src/*.ts`
+
+## Participantes
+
+    (17-07-2016)
+        - Boris
