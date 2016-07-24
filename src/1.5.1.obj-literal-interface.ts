@@ -1,13 +1,9 @@
-namespace objeto_literal_def {
+namespace objeto_literal_interface {
 
-    // Objeto Literal
-    //  clave: valor
-
-
-    export let persona: any = {
+    export let persona: interfaces.IPersona = {
         nombre: 'Boris',
-        apellidoPaterno: 'Gastelu',
-        apellidoMaterno: 'Roque',
+        apePaterno: 'Gastelu',
+        apeMaterno: 'Roque',
         edad: 32,
         frase: 'Hoy es un buen dia para aprender TypeScript'
     };
@@ -21,15 +17,15 @@ namespace objeto_literal_def {
     persona['profesion'] = 'desarrollador';
     // console.log(persona);
 
-    persona.agregarHobbies = function (hobbie) {
+    persona.agregarHobbies = function (hobbie: string): void {
         this.hobbies.push(hobbie);
     };
 
-    persona['mostrarHobbies'] = function () {
+    persona['mostrarHobbies'] = function (): void {
         console.log(this.hobbies.join(', '));
     };
 
-    persona.separarFrase = function (separador) {
+    persona.separarFrase = function (separador: string): void {
         var resultado = this.frase.split(separador || ' ');
         console.log(resultado);
     };
@@ -42,10 +38,13 @@ namespace objeto_literal_def {
         };
     };
 
-    // let persona2 = {
-    //     name: 'Juan',
-    //     paterno: 'Rodriguez',
-    //     hobby: ['fulbito', 'nadar']
-    // };
+    let persona2: interfaces.IPersona = {
+        nombre: 'Juan',
+        apePaterno: 'Rodriguez',
+        apeMaterno: 'Mendez',
+        edad: 25,
+        frase: 'Soy una persona',
+        hobbies: ['fulbito', 'nadar']
+    };
 
 }
