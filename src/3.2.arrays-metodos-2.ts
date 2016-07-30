@@ -2,11 +2,11 @@ namespace arrays_metodos {
 
     // Iteracion de elementos del array
     personas.forEach((persona) => {
-        console.log(`${persona.nombre} ${persona.apePaterno}`);
+        // console.log(`${persona.nombre} ${persona.apePaterno}`);
     });
 
     personas.forEach(function (persona) {
-        console.log(`${persona.nombre} ${persona.apePaterno}`);
+        // console.log(`${persona.nombre} ${persona.apePaterno}`);
     });
 
     let suma = 0;
@@ -17,6 +17,6 @@ namespace arrays_metodos {
     personas.forEach(cbSumaEdades);
     personas.forEach((persona) => suma += persona.edad);
 
-    console.log(suma);
+    // console.log(suma);
 
 }
