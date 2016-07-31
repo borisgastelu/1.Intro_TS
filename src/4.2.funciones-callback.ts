@@ -2,6 +2,7 @@
 namespace funciones {
 
     let ordenSuperiorFn = (otraFuncion) => {
+        // ... codigo ...
         let resultado = otraFuncion();
         console.log(resultado);
     };
