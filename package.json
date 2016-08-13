@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precompile": "rimraf ./build/*",
-    "compile": "tsc --outdir build ./src/*.ts --watch --sourcemap",
+    "compile": "tsc --module AMD --target ES5 --outdir build ./src/*.ts ./src/**/*.ts --watch --sourcemap",
     "lite": "lite-server",
     "serve": "concurrently \"npm run compile\" \"npm run lite\""
   },
