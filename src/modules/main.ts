@@ -1,7 +1,3 @@
 declare var require;
 
-require(['app'],
-    app => {
-        app.run()
-    }
-);
+require(['./app'], app => app.run());
